@@ -1,0 +1,843 @@
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+25/03/22 22:23:02 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+25/03/22 22:23:04 WARN ResolveWriteToStream: Temporary checkpoint location created which is deleted normally when the query didn't fail: /tmp/temporary-e4e00067-4cee-4566-b06a-80b7ecceaef5. If it's required to delete it under any circumstances, please set spark.sql.streaming.forceDeleteTempCheckpointLocation to true. Important to know deleting temp checkpoint folder is best effort.
+25/03/22 22:23:04 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+
+Processing Batch 0
+Average BILL_AMT1 in this batch: 49337.19
+Anomalies (PAY_AMT1 > 50,000):
++---+--------+---------+
+| ID|PAY_AMT1|LIMIT_BAL|
++---+--------+---------+
+|  7|   55000|   500000|
+|183|   70010|   500000|
+|187|   57087|   360000|
+|264|   51315|   230000|
+|387|   80000|    80000|
+|463|   80000|   290000|
+|464|  120093|   230000|
+|481|  120041|   250000|
+|513|   53228|   360000|
+|678|   52129|   200000|
+|729|   90000|   330000|
+|763|   67650|   260000|
+|829|  199646|   200000|
+|983|   81690|   500000|
++---+--------+---------+
+
+Summary Statistics - Defaults: 214, Total Records: 1000
+
+Processing Batch 1
+Average BILL_AMT1 in this batch: 51199.10
+Anomalies (PAY_AMT1 > 50,000):
++----+--------+---------+
+|  ID|PAY_AMT1|LIMIT_BAL|
++----+--------+---------+
+|1028|   75459|   450000|
+|1037|   78016|   150000|
+|1066|  239104|   270000|
+|1074|   75351|   360000|
+|1078|   58761|   500000|
+|1114|   80004|   110000|
+|1228|   87004|   500000|
+|1384|   83754|   300000|
+|1387|  210000|   360000|
+|1389|  100000|   220000|
+|1415|  100000|   420000|
+|1810|  163500|   500000|
+|1829|   81975|   380000|
+|1832|   52398|   270000|
+|1906|  160444|   340000|
++----+--------+---------+
+
+Summary Statistics - Defaults: 220, Total Records: 1000
+
+Processing Batch 2
+Average BILL_AMT1 in this batch: 50063.04
+Anomalies (PAY_AMT1 > 50,000):
++----+--------+---------+
+|  ID|PAY_AMT1|LIMIT_BAL|
++----+--------+---------+
+|2024|   55139|   100000|
+|2040|   52306|   200000|
+|2130|   56270|   340000|
+|2154|   60086|   150000|
+|2165|   79651|   360000|
+|2167|   50004|   440000|
+|2198|   50784|  1000000|
+|2267|   60284|   360000|
+|2340|  140013|   240000|
+|2400|  107000|   260000|
+|2460|   51811|   250000|
+|2478|   52165|   160000|
+|2547|   55000|   100000|
+|2688|  368199|   500000|
++----+--------+---------+
+
+Summary Statistics - Defaults: 234, Total Records: 1000
+
+Processing Batch 3
+Average BILL_AMT1 in this batch: 47120.35
+Anomalies (PAY_AMT1 > 50,000):
++----+--------+---------+
+|  ID|PAY_AMT1|LIMIT_BAL|
++----+--------+---------+
+|3002|   65722|   230000|
+|3045|   52226|   430000|
+|3057|   89187|   200000|
+|3071|   73428|   480000|
+|3106|  152000|   350000|
+|3143|   80000|   170000|
+|3221|  298887|   310000|
+|3280|   66513|   170000|
+|3286|  101585|   280000|
+|3397|  184212|   210000|
+|3610|   69220|   310000|
+|3612|  187206|   500000|
+|3616|   59324|   390000|
+|3691|  100000|   180000|
+|3733|   70973|   100000|
+|3734|   99664|   750000|
+|3803|   62773|    60000|
+|3868|   54490|   450000|
+|3919|   60267|   180000|
+|3943|   59068|    60000|
++----+--------+---------+
+
+Summary Statistics - Defaults: 224, Total Records: 1000
+
+Processing Batch 4
+Average BILL_AMT1 in this batch: 53361.11
+Anomalies (PAY_AMT1 > 50,000):
++----+--------+---------+
+|  ID|PAY_AMT1|LIMIT_BAL|
++----+--------+---------+
+|4061|   51334|   320000|
+|4227|   86682|   320000|
+|4417|   73000|   270000|
+|4554|  242247|   350000|
+|4711|   54608|    50000|
+|4719|   63023|    80000|
+|4762|  142159|   160000|
+|4766|   55614|   480000|
+|4806|   71277|   300000|
+|4809|   87998|   190000|
+|4829|   75000|    90000|
+|4866|   59201|   200000|
+|4920|  100000|   350000|
+|4945|  101780|   110000|
+|4957|  151650|   280000|
+|4994|   68942|   160000|
++----+--------+---------+
+
+Summary Statistics - Defaults: 215, Total Records: 1000
+
+Processing Batch 5
+Average BILL_AMT1 in this batch: 51338.05
+Anomalies (PAY_AMT1 > 50,000):
++----+--------+---------+
+|  ID|PAY_AMT1|LIMIT_BAL|
++----+--------+---------+
+|5170|  125000|   140000|
+|5308|  155000|   160000|
+|5404|  112000|   170000|
+|5450|  150039|   380000|
+|5460|   68536|   360000|
+|5482|   53444|   150000|
+|5495|  237000|   280000|
+|5529|   64626|    70000|
+|5540|   90889|   500000|
+|5673|   53267|    50000|
+|5688|  302000|   480000|
+|5713|  114482|   210000|
+|5719|   79786|    90000|
+|5810|   53751|   360000|
+|5836|   52425|   270000|
++----+--------+---------+
+
+Summary Statistics - Defaults: 206, Total Records: 1000
+
+Processing Batch 6
+Average BILL_AMT1 in this batch: 50374.88
+Anomalies (PAY_AMT1 > 50,000):
++----+--------+---------+
+|  ID|PAY_AMT1|LIMIT_BAL|
++----+--------+---------+
+|6033|   65215|   500000|
+|6097|   60295|    60000|
+|6132|  137308|   350000|
+|6245|   80019|   280000|
+|6461|   65757|   380000|
+|6472|   68781|   500000|
+|6481|   68500|   110000|
+|6545|  105484|   360000|
+|6593|  261524|   500000|
+|6610|   84459|   420000|
+|6723|   69803|   560000|
+|6774|  300000|   470000|
+|6782|   51644|   640000|
+|6813|   78130|   400000|
+|6840|   86992|   500000|
+|6870|  107651|   210000|
+|6933|   60446|   500000|
+|6978|   59570|   400000|
++----+--------+---------+
+
+Summary Statistics - Defaults: 246, Total Records: 1000
+
+Processing Batch 7
+Average BILL_AMT1 in this batch: 48156.12
+Anomalies (PAY_AMT1 > 50,000):
++----+--------+---------+
+|  ID|PAY_AMT1|LIMIT_BAL|
++----+--------+---------+
+|7128|   99159|   500000|
+|7205|   63895|   370000|
+|7321|  164820|   240000|
+|7419|   52082|    20000|
+|7473|   56388|    90000|
+|7510|  107000|   230000|
+|7586|   88444|   220000|
+|7870|   50451|   220000|
+|7878|  101458|   500000|
+|7921|   64555|   140000|
+|7986|   53563|   360000|
++----+--------+---------+
+
+Summary Statistics - Defaults: 237, Total Records: 1000
+
+Processing Batch 8
+Average BILL_AMT1 in this batch: 49192.97
+Anomalies (PAY_AMT1 > 50,000):
++----+--------+---------+
+|  ID|PAY_AMT1|LIMIT_BAL|
++----+--------+---------+
+|8138|  141472|   140000|
+|8174|  156108|   360000|
+|8202|   61168|   150000|
+|8212|   60081|   390000|
+|8221|   70000|   140000|
+|8248|   71536|   420000|
+|8258|  150000|   310000|
+|8325|   50836|   100000|
+|8457|   55047|   300000|
+|8475|  135868|   310000|
+|8501|  405016|   400000|
+|8530|   55167|   240000|
+|8555|   61164|   270000|
+|8659|  100012|   350000|
+|8707|   65140|   270000|
+|8772|  150000|   320000|
+|8853|  199000|   210000|
+|8880|  272817|   180000|
+|8968|   73700|   270000|
+|8978|   60000|   230000|
++----+--------+---------+
+
+Summary Statistics - Defaults: 224, Total Records: 1000
+
+Processing Batch 9
+Average BILL_AMT1 in this batch: 48385.92
+Anomalies (PAY_AMT1 > 50,000):
++----+--------+---------+
+|  ID|PAY_AMT1|LIMIT_BAL|
++----+--------+---------+
+|9059|   71316|   120000|
+|9136|  234000|   240000|
+|9155|   52280|   490000|
+|9346|   78580|   300000|
+|9391|  101319|   400000|
+|9423|   53421|   500000|
+|9451|   63256|   500000|
+|9457|   62635|   310000|
+|9460|   62469|   230000|
+|9514|  100066|   350000|
+|9548|   61137|   360000|
+|9764|   60000|   200000|
+|9831|   64461|   240000|
+|9837|   86367|   110000|
+|9978|   60248|   390000|
++----+--------+---------+
+
+Summary Statistics - Defaults: 239, Total Records: 1000
+
+Processing Batch 10
+Average BILL_AMT1 in this batch: 49821.38
+Anomalies (PAY_AMT1 > 50,000):
++-----+--------+---------+
+|   ID|PAY_AMT1|LIMIT_BAL|
++-----+--------+---------+
+|10054|   50263|   400000|
+|10165|  125000|   120000|
+|10190|   90012|   500000|
+|10276|   70000|   380000|
+|10281|  201153|   310000|
+|10294|   50006|   320000|
+|10408|   52556|   200000|
+|10480|  150000|   200000|
+|10517|   50070|   350000|
+|10616|   73022|   400000|
+|10618|  226145|   500000|
+|10662|   80648|   500000|
+|10796|  146282|   240000|
+|10801|   63053|   130000|
+|10857|   99787|   200000|
+|10915|  106257|   120000|
+|10931|   50390|   320000|
+|10958|   54190|   150000|
++-----+--------+---------+
+
+Summary Statistics - Defaults: 216, Total Records: 1000
+
+Processing Batch 11
+Average BILL_AMT1 in this batch: 45421.59
+Anomalies (PAY_AMT1 > 50,000):
++-----+--------+---------+
+|   ID|PAY_AMT1|LIMIT_BAL|
++-----+--------+---------+
+|11022|   85000|   200000|
+|11228|   64612|   170000|
+|11321|   70000|   140000|
+|11327|   99235|   130000|
+|11390|   60207|   330000|
+|11416|  105072|   130000|
+|11515|   66022|   200000|
+|11532|  162003|   500000|
+|11537|  101796|   200000|
+|11746|   54300|   110000|
+|11756|   91000|    50000|
+|11796|   56613|   390000|
+|11817|   50908|    50000|
+|11867|   69616|    90000|
+|11962|   94135|   500000|
+|11982|   56243|   200000|
++-----+--------+---------+
+
+Summary Statistics - Defaults: 218, Total Records: 1000
+
+Processing Batch 12
+Average BILL_AMT1 in this batch: 51319.73
+Anomalies (PAY_AMT1 > 50,000):
++-----+--------+---------+
+|   ID|PAY_AMT1|LIMIT_BAL|
++-----+--------+---------+
+|12117|  120656|   120000|
+|12227|   51000|   480000|
+|12251|   65758|   340000|
+|12331|  505000|   300000|
+|12340|   72534|   250000|
+|12402|   93661|   340000|
+|12416|  229818|   370000|
+|12475|  145273|   210000|
+|12531|   97396|   140000|
+|12568|   60367|   150000|
+|12579|   97345|   500000|
+|12635|   77677|   500000|
+|12667|   55974|   400000|
+|12726|   65361|   240000|
+|12744|   72234|   500000|
+|12770|   68209|    70000|
+|12805|   65732|   500000|
+|12946|   67568|   150000|
++-----+--------+---------+
+
+Summary Statistics - Defaults: 231, Total Records: 1000
+
+Processing Batch 13
+Average BILL_AMT1 in this batch: 49952.81
+Anomalies (PAY_AMT1 > 50,000):
++-----+--------+---------+
+|   ID|PAY_AMT1|LIMIT_BAL|
++-----+--------+---------+
+|13004|   89295|   280000|
+|13075|   77996|   490000|
+|13088|   86000|   420000|
+|13148|   90044|   360000|
+|13172|   90500|   240000|
+|13187|  250000|   750000|
+|13289|  164163|   180000|
+|13364|  133280|   260000|
+|13381|  120018|   400000|
+|13403|   68738|   190000|
+|13438|   50122|   360000|
+|13500|   62330|   200000|
+|13522|   51383|   460000|
+|13590|   77900|    80000|
+|13660|  107789|   220000|
+|13819|   75113|   340000|
+|13862|   67431|   110000|
+|13912|   80191|   450000|
+|13954|  100000|   370000|
+|13964|  180000|   480000|
++-----+--------+---------+
+
+Summary Statistics - Defaults: 223, Total Records: 1000
+
+Processing Batch 14
+Average BILL_AMT1 in this batch: 48639.17
+Anomalies (PAY_AMT1 > 50,000):
++-----+--------+---------+
+|   ID|PAY_AMT1|LIMIT_BAL|
++-----+--------+---------+
+|14020|   50012|   500000|
+|14136|  107243|   500000|
+|14176|   50133|   500000|
+|14199|   52498|    50000|
+|14251|  236533|   390000|
+|14267|   52000|   290000|
+|14284|   53367|   390000|
+|14344|  124900|   360000|
+|14493|   61101|   150000|
+|14512|   58665|   500000|
+|14607|   50439|   160000|
+|14609|   94921|   390000|
+|14622|   60957|   500000|
+|14710|   90668|   500000|
+|14720|   58243|   240000|
+|14753|   84387|   200000|
+|14848|  117243|   500000|
+|14916|  150055|   470000|
+|14975|   65592|    80000|
++-----+--------+---------+
+
+Summary Statistics - Defaults: 230, Total Records: 1000
+
+Processing Batch 15
+Average BILL_AMT1 in this batch: 52379.45
+Anomalies (PAY_AMT1 > 50,000):
++-----+--------+---------+
+|   ID|PAY_AMT1|LIMIT_BAL|
++-----+--------+---------+
+|15066|   60092|   590000|
+|15069|  100000|   280000|
+|15126|  194000|   330000|
+|15327|   70000|   130000|
+|15473|  150298|   420000|
+|15541|  247562|   260000|
+|15576|   65668|   110000|
+|15658|  101405|   220000|
+|15683|   51762|   250000|
+|15687|  164000|   170000|
+|15694|  100000|   360000|
+|15724|  100467|   170000|
+|15754|   65145|    80000|
+|15932|   77817|   130000|
++-----+--------+---------+
+
+Summary Statistics - Defaults: 215, Total Records: 1000
+
+Processing Batch 16
+Average BILL_AMT1 in this batch: 51390.02
+Anomalies (PAY_AMT1 > 50,000):
++-----+--------+---------+
+|   ID|PAY_AMT1|LIMIT_BAL|
++-----+--------+---------+
+|16031|   50468|   570000|
+|16097|   83750|    80000|
+|16190|  164582|   190000|
+|16271|  180040|   180000|
+|16473|  107767|   130000|
+|16507|  135018|   150000|
+|16528|  143713|   140000|
+|16588|   82694|   400000|
+|16810|   50005|   220000|
+|16904|   72024|   100000|
+|16952|   55000|   170000|
++-----+--------+---------+
+
+Summary Statistics - Defaults: 295, Total Records: 1000
+
+Processing Batch 17
+Average BILL_AMT1 in this batch: 53092.59
+Anomalies (PAY_AMT1 > 50,000):
++-----+--------+---------+
+|   ID|PAY_AMT1|LIMIT_BAL|
++-----+--------+---------+
+|17047|   61058|    60000|
+|17113|  130000|   130000|
+|17144|   68000|   230000|
+|17399|   53000|    70000|
+|17428|   53021|   230000|
+|17506|  100000|   390000|
+|17529|  191446|   370000|
+|17661|  273844|   280000|
+|17677|   99007|   280000|
+|17717|   62462|   120000|
+|17755|  124174|   370000|
+|17768|  276698|   320000|
+|17866|   53860|    50000|
++-----+--------+---------+
+
+Summary Statistics - Defaults: 263, Total Records: 1000
+
+Processing Batch 18
+Average BILL_AMT1 in this batch: 49821.02
+Anomalies (PAY_AMT1 > 50,000):
++-----+--------+---------+
+|   ID|PAY_AMT1|LIMIT_BAL|
++-----+--------+---------+
+|18214|   60000|   300000|
+|18234|  160002|   400000|
+|18256|   63000|    80000|
+|18372|   66470|   150000|
+|18374|   78000|    80000|
+|18481|  198842|   330000|
+|18495|   72500|    80000|
+|18536|  129565|   250000|
+|18565|   70005|   500000|
+|18577|  100082|   110000|
+|18724|  100000|   160000|
+|18785|   90523|   230000|
+|18818|  107000|   300000|
+|18877|  144047|    60000|
+|18924|   50005|    70000|
+|18938|   52720|   210000|
++-----+--------+---------+
+
+Summary Statistics - Defaults: 220, Total Records: 1000
+
+Processing Batch 19
+Average BILL_AMT1 in this batch: 50079.45
+Anomalies (PAY_AMT1 > 50,000):
++-----+--------+---------+
+|   ID|PAY_AMT1|LIMIT_BAL|
++-----+--------+---------+
+|19042|   50295|    50000|
+|19135|   75000|   350000|
+|19166|  150000|   180000|
+|19395|   51932|    80000|
+|19440|   50706|   300000|
+|19517|  150000|   560000|
+|19568|   64013|   240000|
+|19612|   63508|   230000|
+|19634|   79113|   500000|
+|19640|   59872|    90000|
+|19644|   90150|   460000|
+|19724|   72001|   500000|
+|19767|   83959|   280000|
+|19865|   50684|   180000|
+|19916|   63000|   500000|
+|19919|  100957|   350000|
+|19982|  101522|   180000|
++-----+--------+---------+
+
+Summary Statistics - Defaults: 188, Total Records: 1000
+
+Processing Batch 20
+Average BILL_AMT1 in this batch: 52655.27
+Anomalies (PAY_AMT1 > 50,000):
++-----+--------+---------+
+|   ID|PAY_AMT1|LIMIT_BAL|
++-----+--------+---------+
+|20065|  100000|   310000|
+|20082|   77225|   120000|
+|20144|  100000|   380000|
+|20190|  260000|   310000|
+|20592|   60751|   170000|
+|20735|  106000|   120000|
+|20764|   94064|   500000|
+|20770|  100496|   360000|
+|20823|   89524|   150000|
+|20875|  120000|   160000|
+|20999|   90001|   200000|
++-----+--------+---------+
+
+Summary Statistics - Defaults: 238, Total Records: 1000
+
+Processing Batch 21
+Average BILL_AMT1 in this batch: 54280.54
+Anomalies (PAY_AMT1 > 50,000):
++-----+--------+---------+
+|   ID|PAY_AMT1|LIMIT_BAL|
++-----+--------+---------+
+|21008|  235728|   200000|
+|21082|   63752|   240000|
+|21244|  189717|   190000|
+|21245|   54946|   250000|
+|21413|   90402|   180000|
+|21572|   80000|   200000|
+|21630|   93788|    90000|
+|21767|   78266|   180000|
+|21896|  232557|   230000|
+|21929|  100000|   120000|
+|21964|   92858|    90000|
++-----+--------+---------+
+
+Summary Statistics - Defaults: 212, Total Records: 1000
+
+Processing Batch 22
+Average BILL_AMT1 in this batch: 55422.15
+Anomalies (PAY_AMT1 > 50,000):
++-----+--------+---------+
+|   ID|PAY_AMT1|LIMIT_BAL|
++-----+--------+---------+
+|22039|   87804|    60000|
+|22074|   55544|   400000|
+|22109|  115041|   150000|
+|22223|   58617|   360000|
+|22443|   60064|   400000|
+|22452|   55000|    90000|
+|22462|  160812|   150000|
+|22751|   60396|   350000|
+|22776|   84267|   450000|
+|22926|   71998|   200000|
+|22987|  140000|   500000|
++-----+--------+---------+
+
+Summary Statistics - Defaults: 165, Total Records: 1000
+
+Processing Batch 23
+Average BILL_AMT1 in this batch: 51521.35
+Anomalies (PAY_AMT1 > 50,000):
++-----+--------+---------+
+|   ID|PAY_AMT1|LIMIT_BAL|
++-----+--------+---------+
+|23004|  225066|   250000|
+|23037|  155484|   500000|
+|23050|   61634|   200000|
+|23100|   55887|    60000|
+|23113|   50071|    70000|
+|23149|  105200|   100000|
+|23191|   60075|   340000|
+|23202|  206032|   400000|
+|23276|  100000|   500000|
+|23300|   57301|   340000|
+|23407|   60559|    60000|
+|23420|  140916|   150000|
+|23426|   57210|   300000|
+|23446|  107124|   520000|
+|23816|  183429|   320000|
+|23861|   65000|   360000|
+|23968|  100000|   220000|
+|23985|   88490|   110000|
++-----+--------+---------+
+
+Summary Statistics - Defaults: 197, Total Records: 1000
+
+Processing Batch 24
+Average BILL_AMT1 in this batch: 57795.74
+Anomalies (PAY_AMT1 > 50,000):
++-----+--------+---------+
+|   ID|PAY_AMT1|LIMIT_BAL|
++-----+--------+---------+
+|24086|   80284|   150000|
+|24117|   55071|   460000|
+|24207|  195316|   200000|
+|24216|  199973|   270000|
+|24302|   71022|   110000|
+|24315|  100000|   400000|
+|24345|  115718|   300000|
+|24643|   61200|   300000|
+|24706|   68013|   500000|
+|24779|  114402|   300000|
+|24843|   96778|   380000|
+|24844|   99737|   210000|
+|24848|   57498|   500000|
+|24875|   75840|   500000|
+|24921|   50942|   430000|
++-----+--------+---------+
+
+Summary Statistics - Defaults: 208, Total Records: 1000
+
+Processing Batch 25
+Average BILL_AMT1 in this batch: 54355.36
+Anomalies (PAY_AMT1 > 50,000):
++-----+--------+---------+
+|   ID|PAY_AMT1|LIMIT_BAL|
++-----+--------+---------+
+|25148|   53705|   170000|
+|25272|   75004|    80000|
+|25432|  304815|   170000|
+|25474|   90000|   240000|
+|25584|  210000|   370000|
+|25626|  100050|   240000|
+|25686|   51772|   150000|
+|25772|   68940|   350000|
+|25811|   69032|   250000|
+|25861|   75000|   270000|
+|25876|   81596|   200000|
+|25914|   73036|   400000|
+|25921|  150359|   240000|
+|25928|   75276|   430000|
+|25950|  184000|   150000|
++-----+--------+---------+
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/home/skul7candy/.local/lib/python3.13/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: reentrant call inside <_io.BufferedReader name=3>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/skul7candy/.local/lib/python3.13/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/skul7candy/.local/lib/python3.13/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+        "Error while sending or receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/home/skul7candy/.local/lib/python3.13/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/skul7candy/.local/lib/python3.13/site-packages/pyspark/context.py", line 381, in signal_handler
+    self.cancelAllJobs()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/home/skul7candy/.local/lib/python3.13/site-packages/pyspark/context.py", line 2446, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+    ~~~~~~~~~~~~^^
+  File "/home/skul7candy/.local/lib/python3.13/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+        answer, self.gateway_client, self.target_id, self.name)
+  File "/home/skul7candy/.local/lib/python3.13/site-packages/pyspark/errors/exceptions/captured.py", line 179, in deco
+    return f(*a, **kw)
+  File "/home/skul7candy/.local/lib/python3.13/site-packages/py4j/protocol.py", line 334, in get_return_value
+    raise Py4JError(
+        "An error occurred while calling {0}{1}{2}".
+        format(target_id, ".", name))
+py4j.protocol.Py4JError: An error occurred while calling o13.sc
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/skul7candy/.local/lib/python3.13/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/skul7candy/.local/lib/python3.13/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+        "Error while sending or receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+
+Summary Statistics - Defaults: 188, Total Records: 1000
+
+Processing Batch 26
+Average BILL_AMT1 in this batch: 53259.66
+Anomalies (PAY_AMT1 > 50,000):
++-----+--------+---------+
+|   ID|PAY_AMT1|LIMIT_BAL|
++-----+--------+---------+
+|26003|  126000|   280000|
+|26022|   69842|   150000|
+|26211|  147314|   150000|
+|26215|  260416|   360000|
+|26418|  238861|   240000|
+|26477|   60718|   380000|
+|26482|   84361|    80000|
+|26508|  111665|   300000|
+|26694|   52896|    70000|
+|26733|  240101|   310000|
+|26883|   60043|   320000|
+|26958|   50042|   380000|
+|26964|   82392|   500000|
++-----+--------+---------+
+
+Summary Statistics - Defaults: 207, Total Records: 1000
+
+Processing Batch 27
+Average BILL_AMT1 in this batch: 54744.53
+Anomalies (PAY_AMT1 > 50,000):
++-----+--------+---------+
+|   ID|PAY_AMT1|LIMIT_BAL|
++-----+--------+---------+
+|27096|   54700|   140000|
+|27102|  244500|   300000|
+|27147|   68000|   320000|
+|27228|   83728|   390000|
+|27272|   83643|   500000|
+|27300|   74081|   250000|
+|27313|   58265|   400000|
+|27342|   64308|   120000|
+|27414|   59852|    60000|
+|27423|  168019|   170000|
+|27466|   62000|   110000|
+|27468|   51500|   550000|
+|27541|  175100|   180000|
+|27615|  106602|   190000|
+|27825|  100741|   320000|
+|27895|  151691|   150000|
+|27896|   70001|   100000|
++-----+--------+---------+
+
+Summary Statistics - Defaults: 237, Total Records: 1000
+
+Processing Batch 28
+Average BILL_AMT1 in this batch: 50261.12
+Anomalies (PAY_AMT1 > 50,000):
++-----+--------+---------+
+|   ID|PAY_AMT1|LIMIT_BAL|
++-----+--------+---------+
+|28004|  493358|   510000|
+|28030|   50702|    50000|
+|28042|  161844|   200000|
+|28162|  135034|   230000|
+|28230|   50016|   400000|
+|28278|  217773|   260000|
+|28331|   72071|   300000|
+|28359|   54318|   280000|
+|28511|   70000|   470000|
+|28541|  120000|   310000|
+|28556|   53400|   420000|
+|28692|   85387|   260000|
+|28716|   62819|   780000|
+|28717|  873552|   340000|
+|28743|   62545|   400000|
+|28744|   70554|   440000|
+|28811|   51304|   500000|
+|28822|   68800|   320000|
+|28825|   84118|   130000|
+|28953|   52223|   280000|
++-----+--------+---------+
+
+Summary Statistics - Defaults: 181, Total Records: 1000
+
+Processing Batch 29
+Average BILL_AMT1 in this batch: 51958.28
+Anomalies (PAY_AMT1 > 50,000):
++-----+--------+---------+
+|   ID|PAY_AMT1|LIMIT_BAL|
++-----+--------+---------+
+|29010|  114558|   200000|
+|29076|  193358|   400000|
+|29119|   52439|   200000|
+|29142|   87170|   480000|
+|29179|   63201|    90000|
+|29370|   70891|   320000|
+|29424|  207000|   310000|
+|29455|   55000|    70000|
+|29477|   54209|   500000|
+|29579|   60054|    60000|
+|29650|  231788|   230000|
+|29667|  118816|   300000|
+|29792|   55291|   200000|
+|29821|  423903|   400000|
+|29868|  300039|   340000|
+|29903|  168096|   170000|
+|29964|  323014|   610000|
+|29971|   52951|   360000|
+|29989|   65000|   250000|
+|29999|   85900|    80000|
++-----+--------+---------+
+
+Summary Statistics - Defaults: 245, Total Records: 1000
+Traceback (most recent call last):
+  File "/home/skul7candy/Videos/sukith-big-data/task2/stream_processing.py", line 73, in <module>
+    query.awaitTermination()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/skul7candy/.local/lib/python3.13/site-packages/pyspark/sql/streaming/query.py", line 221, in awaitTermination
+    return self._jsq.awaitTermination()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/skul7candy/.local/lib/python3.13/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+        answer, self.gateway_client, self.target_id, self.name)
+  File "/home/skul7candy/.local/lib/python3.13/site-packages/pyspark/errors/exceptions/captured.py", line 179, in deco
+    return f(*a, **kw)
+  File "/home/skul7candy/.local/lib/python3.13/site-packages/py4j/protocol.py", line 334, in get_return_value
+    raise Py4JError(
+        "An error occurred while calling {0}{1}{2}".
+        format(target_id, ".", name))
+py4j.protocol.Py4JError: An error occurred while calling o41.awaitTermination
